@@ -1,8 +1,8 @@
 ---
+title: What is 80% good enough for real-time analyses during the COVID-19 pandemic
 bibliography: [library.bib]
+output: pdf_document
 ---
-
-# What is 80% good enough for real-time analyses during the COVID-19 pandemic
 
 ## Abstract
 
@@ -17,8 +17,6 @@ Collectively, we have published numerous studies related to the COVID-19 pandemi
 ## Examples
 
 ### Global Rt estimation and short term forecasting
-
-[@globalrt]
 
 #### What
 
@@ -115,13 +113,9 @@ We reported the lack of location-specific data on the delay between onset and ca
 ### Conclusions
 
 - Lack of breadth of knowledge in small research groups and difficulty in collaborating across groups on rapidly developing problems. This lack of knowledge includes both domain area expertise, statistical knowledge, and technical knowledge such as knowledge of software design, cloud computing, and task scheduling.
-- As noted elsewhere this issue is exacerbated by the persistent myth of the lone researcher and the encouragement of this ideal by funding bodies [@kucharski]. ECRs are actively encouraged to pursue their own research interests with little reward for working collaboratively as part of a wider effort, we think that this likely negatively impacted the quality of our work.
+- As noted elsewhere this issue is exacerbated by the persistent myth of the lone researcher and the encouragement of this ideal by funding bodies [@KucharskiPlos]. ECRs are actively encouraged to pursue their own research interests with little reward for working collaboratively as part of a wider effort, we think that this likely negatively impacted the quality of our work.
 - A persistent issue in academia more widely is the need for all work to be "novel". In the context of real-time analyses, this means that little follow-up work is done to evaluate the quality of real-time analyses.
 - Many of the currently available, and commonly used, software tools require a high level of user knowledge to use appropriately. For work with short timelines, it may be difficult to produce results that are of sufficient quality without more tools customised to common tasks and a greater emphasis on learning how to use the currently available tools in detail.
-
-- Publish or perish.
-- "Team" science.
-- Little incentive to properly list limitations as difficult for all but subject area experts to pick up on them.
 
 ## References
 
