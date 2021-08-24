@@ -1,6 +1,5 @@
 ---
-title: What is 80% good enough for real-time analyses during the COVID-19 pandemic
-bibliography: [library.bib]
+title: What is 80% good enoughttps://cmmid.slack.com/archives/D0100EVJ3JB/p1629795789001500
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa-numeric-superscript-brackets.csl
 output: pdf_document
 ---
@@ -15,40 +14,11 @@ This quote from Whitty et al. [@whitty_what_2015] captures much of the academic 
 
 Collectively, we have published numerous studies related to the COVID-19 pandemic, have contributed studies to government advisory committees, presented results to the WHO and other bodies, and have worked on previous infectious disease outbreaks with similar issues such as the 2013-2016 Ebola outbreak in West Africa. Our work spans non-parametric statistical modelling of transmission, short-term forecasts, scenario modelling using mechanistic compartmental models, and a range of reactive analyses usually conducted with short-time horizons to inform policy-makers.
 
+The first example of our work we discuss is a large scale project to estimate the effective reproduction number of COVID-19 over tim in real-time [@Abbott2020v1; @Abbott2020v2]. Starting in February 2020 with a focus on China and growing to include national estimates globally as well as estimates at smaller scales in multiple countries with a range of data sources. This work has fed into the Scientific Pandemic Influenza Group on Modelling (SPI-M) aggregated reproduction number estimate and short-term forecasts [@sherratt_exploring_2021; @funk_short-term_2020] and the site where estimates are presented has had over 400,000 unique users. As being based on surveillance data, done at large scale, and repeated on routinely changing data this work has many obvious limitations. In our published work we reported a range of these including the lack of location-specific data on the time from infection to case report, lack of understanding on the interaction between the generation time and the reproduction number, and the difficulty in extrapolating current reported cases to infer the dynamics of current infections. However, our initial work also included an unknown, and hence unreported, limitation in that it assumed that the delay from infection to report could be treated as reversible when this cannot in fact be done in most circumstances without introducing bias [@Abbott2020v1]. This bias has since been investigated extensively and has been shown to result in over-smoothed estimates that lag real-world changes in transmission [@gostic]. Though this issue has since been mitigated via new methodological developments [@Abbott2020v2] it is likely that it resulted in flaw inferences being drawn from the estimates. An additional unacknowledged limitation of this work is the difficulty in maintaining and running a large scale, compute intensive, project over a prolonged period of time for which the best data sources also differ by location.
+
+A critical issue that influenced the initial flawed implementation was a lack of knowledge of developments in certain areas of the literature (in this case the HIV literature) [@gostic] and the failure of those working in this area to propagate robust tooling to allow others to mitigate the issue. This was likely exacerbated by the typical lack of focus on developing methodology appropriate to real-time disease tracking prior to the COVID-19 pandemic and the difficulty in developing tools whilst also trying to deploy them. A wider issue with this project was its continuous nature and lack of discrete  outcomes which made incentivising substantial contributions difficult, especially once the initial work had been published. In theory this could have been resolved by building collaborations with those developing new methodology as contributors to the project but in practice this was difficult to negotiate despite significant time and resources being spent on this aim. Unfortunately whilst a range of real-time reproduction number estimations now exist in general these have been only partially evaluated and in they are rarely designed with reusability robustness in mind. 
+
 ### Examples
-
-#### Global Rt estimation and short term forecasting
-
-##### What
-
-- Estimation of the time-varying effective reproduction number of COVID-19. Initially in China from February 2020, then expanding globally, to sub-national geographies, and multiple data sources with daily updates [@Abbott2020v1; @Abbott2020v2].
-- The same estimation method was used to contribute to the SPI-M aggregated reproduction number [@sherratt_exploring_2021] estimates and to ensemble short term forecasts
-- Work contributed to the SPI-M Rt estimate and SPI-M short term forecasts [@funk_short-term_2020]
-
-##### Reported limitations
-
-We reported the lack of location-specific data on the delay between onset and case report, lack of location-specific data on the generation time of COVID-19, and difficulty in extrapolating current cases to produce estimates of the current reproduction number.
-
-##### Unreported limitations
-
-- Our initial approach was flawed as it treated delays from infection to report as reversible.
-- Our handling of delays resulted in over-smoothed estimates that Gostic et al. [@gostic] showed lagged real-world changes in transmission.
-- This issue was widely known in some areas but otherwise little discussed in the literature.
-- Methods to account for this issue existed but had received little attention and had not been designed to robustly deal with real-world data.
-- Though updates occur each day inputs such as the delays from onset to report are not frequently updated. There are likely better data sources now available in each location.
-
-##### Potential biases
-
-##### Causes
-
-- Lack of depth of knowledge about historical pandemics and the lessons learnt from them.
-- Lack of researcher time to think deeply about the problem at hand
-- As this is not a classic academic project that generates discrete studies for researchers to use to gain credit, it has been difficult to motivated contributors on the scale required.
-
-##### Mitigation
-
-- A collaboration between researchers producing real-time reproduction number estimates highlighted this issue [@gostic]. We, along with other groups, then developed a range of methods to better handle the issue [@Abbott2020v2].
-- Whilst many methods now exist they have in general been only partially evaluated and many of them are not designed for general, long term, usage.
 
 #### Alpha and Delta transmissibility advantage
 
