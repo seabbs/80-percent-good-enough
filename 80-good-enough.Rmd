@@ -11,6 +11,7 @@ author:
 date: 2022-09-19
 creative_commons: CC BY
 cite: true
+image: 80-good-enough.png
 output:
  distill::distill_article:
    self_contained: false
