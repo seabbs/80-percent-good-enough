@@ -1,6 +1,9 @@
 library(rmarkdown)
 library(trackdown)
 
+# render using defaults
+render("letter.Rmd")
+
 # render as a pdf locally
 render("letter.Rmd", output_format = "pdf_document")
 
