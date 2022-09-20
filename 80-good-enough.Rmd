@@ -75,4 +75,4 @@ All of the examples in this letter were published with open-source code and the 
 
 ## Acknowledgements
 
-We thank Sebastian Funk and Adam Kucharski for their feedback on an earlier version of this piece.
+We thank Sebastian Funk for his feedback on an earlier version of this piece.
